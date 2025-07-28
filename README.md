@@ -35,4 +35,12 @@ This project is a responsive and elegant landing page designed for a restaurant,
 ---
 
 ## 📂 Folder Structure
+project-root/
+│
+├── assets/
+│ ├── res1.jpeg # Food image
+│ ├── res2.jpeg # Chef image (used in hero section)
+│ └── logo1.png # Site logo
+│
+├── index.html # Main landing page
 
