@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Landing Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    .hero {
+      background: url('assets/res2.jpeg') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-egg-fried me-2"></i>DeliciousBite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content text-white">
+      <h1>Fresh Food Made With Love</h1>
+      <p class="lead">Delicious meals delivered right to your table.</p>
+      <a href="#about" class="btn btn-warning btn-lg mt-3">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Why Choose Us?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3">
+            <i class="bi bi-emoji-smile display-4 text-warning mb-3"></i>
+            <h5 class="card-title">Friendly Service</h5>
+            <p>We serve with a smile! Your happiness is our top priority.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3">
+            <i class="bi bi-truck display-4 text-warning mb-3"></i>
+            <h5 class="card-title">Fast Delivery</h5>
+            <p>Hot and fresh food delivered right to your door in minutes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm text-center p-3">
+            <i class="bi bi-award display-4 text-warning mb-3"></i>
+            <h5 class="card-title">Quality Ingredients</h5>
+            <p>We use only the freshest and highest-quality ingredients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image & About Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img src="assets/res1.jpeg" class="img-fluid rounded shadow-sm" alt="Delicious Salad">
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3">Our Chef’s Special</h3>
+          <p>B. O'Sullivan brings international flavors with a passion for creativity. From farm-fresh produce to
+            hand-crafted sauces, every dish is an experience.</p>
+          <ul>
+            <li>Customized Event Catering</li>
+            <li>Vegetarian & Vegan Options</li>
+            <li>Eco-Friendly Packaging</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Get In Touch</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Have a question or want to book catering?</strong></p>
+          <p><i class="bi bi-envelope"></i> support@deliciousbite.com</p>
+          <p><i class="bi bi-telephone"></i> +91 12345 67890</p>
+          <p><i class="bi bi-geo-alt"></i> 456 Taste Lane, Bhubaneswar, India</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 DeliciousBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
